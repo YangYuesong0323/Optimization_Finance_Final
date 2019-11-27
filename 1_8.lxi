@@ -1,0 +1,506 @@
+B 3 C o m p i l a t i o n
+B 256 Include File Summary
+B 268 E x e c u t i o n
+I 268 x
+B 278 Equation Listing    SOLVE CVaRModel Using LP From line 117
+D 281 BudgetCon
+D 286 ReturnCon
+D 295 LossDefCon
+D 312 VaRDevCon
+D 323 CVaRDefCon
+D 398 ObjectivFunc
+D 403 CVaRLimCon
+D 408 ReturnLimCon
+B 414 Column Listing      SOLVE CVaRModel Using LP From line 117
+E 417 x
+E 1186 VaRDev
+E 1205 losses
+E 1224 VaR
+E 1481 CVaR
+E 1490 ExpectedReturn
+E 1499 obj
+B 1507 Model Statistics    SOLVE CVaRModel Using LP From line 117
+B 1523 Solution Report     SOLVE CVaRModel Using LP From line 117
+F 1553 BudgetCon
+F 1554 ReturnCon
+F 1559 LossDefCon
+F 1814 VaRDevCon
+F 2071 CVaRDefCon
+F 2072 ObjectivFunc
+F 2073 CVaRLimCon
+F 2074 ReturnLimCon
+G 2081 x
+G 2100 VaRDev
+G 2355 losses
+G 2612 VaR
+G 2613 CVaR
+G 2614 ExpectedReturn
+G 2615 obj
+B 2629 E x e c u t i o n
+I 2629 x
+I 2637 ExpectedReturn
+I 2638 VaR
+I 2639 CVaR
+I 2641 MuTarget
+I 2642 CVaRTarget
+I 2644 BestCase
+I 2645 WorstCase
+B 2649 Equation Listing    SOLVE CVaRModel Using LP From line 168
+D 2652 BudgetCon
+D 2657 ReturnCon
+D 2664 LossDefCon
+D 2681 VaRDevCon
+D 2692 CVaRDefCon
+D 2769 ObjectivFunc
+D 2774 CVaRLimCon
+D 2779 ReturnLimCon
+B 2785 Column Listing      SOLVE CVaRModel Using LP From line 168
+E 2788 x
+E 3557 VaRDev
+E 3576 losses
+E 3595 VaR
+E 3852 CVaR
+E 3861 ExpectedReturn
+E 3870 obj
+B 3878 Model Statistics    SOLVE CVaRModel Using LP From line 168
+B 3894 Solution Report     SOLVE CVaRModel Using LP From line 168
+F 3924 BudgetCon
+F 3925 ReturnCon
+F 3930 LossDefCon
+F 4185 VaRDevCon
+F 4442 CVaRDefCon
+F 4443 ObjectivFunc
+F 4444 CVaRLimCon
+F 4445 ReturnLimCon
+G 4452 x
+G 4471 VaRDev
+G 4726 losses
+G 4983 VaR
+G 4984 CVaR
+G 4985 ExpectedReturn
+G 4986 obj
+B 4999 Equation Listing    SOLVE CVaRModel Using LP From line 176
+D 5002 BudgetCon
+D 5007 ReturnCon
+D 5014 LossDefCon
+D 5031 VaRDevCon
+D 5042 CVaRDefCon
+D 5117 ObjectivFunc
+D 5122 CVaRLimCon
+D 5127 ReturnLimCon
+B 5133 Column Listing      SOLVE CVaRModel Using LP From line 176
+E 5136 x
+E 5905 VaRDev
+E 5924 losses
+E 5943 VaR
+E 6200 CVaR
+E 6209 ExpectedReturn
+E 6218 obj
+B 6226 Model Statistics    SOLVE CVaRModel Using LP From line 176
+B 6242 Solution Report     SOLVE CVaRModel Using LP From line 176
+F 6272 BudgetCon
+F 6273 ReturnCon
+F 6278 LossDefCon
+F 6533 VaRDevCon
+F 6790 CVaRDefCon
+F 6791 ObjectivFunc
+F 6792 CVaRLimCon
+F 6793 ReturnLimCon
+G 6800 x
+G 6819 VaRDev
+G 7074 losses
+G 7331 VaR
+G 7332 CVaR
+G 7333 ExpectedReturn
+G 7334 obj
+B 7347 E x e c u t i o n
+I 7349 MaxCVar
+I 7350 MinCVar
+B 7354 Equation Listing    SOLVE CVaRModel Using LP From line 189
+D 7357 BudgetCon
+D 7362 ReturnCon
+D 7369 LossDefCon
+D 7386 VaRDevCon
+D 7397 CVaRDefCon
+D 7472 ObjectivFunc
+D 7477 CVaRLimCon
+D 7482 ReturnLimCon
+B 7488 Column Listing      SOLVE CVaRModel Using LP From line 189
+E 7491 x
+E 8260 VaRDev
+E 8279 losses
+E 8298 VaR
+E 8555 CVaR
+E 8563 ExpectedReturn
+E 8572 obj
+B 8580 Model Statistics    SOLVE CVaRModel Using LP From line 189
+B 8601 Solution Report     SOLVE CVaRModel Using LP From line 189
+F 8631 BudgetCon
+F 8632 ReturnCon
+F 8637 LossDefCon
+F 8892 VaRDevCon
+F 9149 CVaRDefCon
+F 9150 ObjectivFunc
+F 9151 CVaRLimCon
+F 9152 ReturnLimCon
+G 9159 x
+G 9178 VaRDev
+G 9433 losses
+G 9690 VaR
+G 9691 CVaR
+G 9692 ExpectedReturn
+G 9693 obj
+B 9706 Equation Listing    SOLVE CVaRModel Using LP From line 189
+D 9709 BudgetCon
+D 9714 ReturnCon
+D 9721 LossDefCon
+D 9738 VaRDevCon
+D 9749 CVaRDefCon
+D 9826 ObjectivFunc
+D 9831 CVaRLimCon
+D 9836 ReturnLimCon
+B 9842 Column Listing      SOLVE CVaRModel Using LP From line 189
+E 9845 x
+E 10614 VaRDev
+E 10633 losses
+E 10652 VaR
+E 10909 CVaR
+E 10917 ExpectedReturn
+E 10926 obj
+B 10934 Model Statistics    SOLVE CVaRModel Using LP From line 189
+B 10955 Solution Report     SOLVE CVaRModel Using LP From line 189
+F 10985 BudgetCon
+F 10986 ReturnCon
+F 10991 LossDefCon
+F 11246 VaRDevCon
+F 11503 CVaRDefCon
+F 11504 ObjectivFunc
+F 11505 CVaRLimCon
+F 11506 ReturnLimCon
+G 11513 x
+G 11532 VaRDev
+G 11787 losses
+G 12044 VaR
+G 12045 CVaR
+G 12046 ExpectedReturn
+G 12047 obj
+B 12060 Equation Listing    SOLVE CVaRModel Using LP From line 189
+D 12063 BudgetCon
+D 12068 ReturnCon
+D 12075 LossDefCon
+D 12092 VaRDevCon
+D 12103 CVaRDefCon
+D 12180 ObjectivFunc
+D 12185 CVaRLimCon
+D 12190 ReturnLimCon
+B 12196 Column Listing      SOLVE CVaRModel Using LP From line 189
+E 12199 x
+E 12968 VaRDev
+E 12987 losses
+E 13006 VaR
+E 13263 CVaR
+E 13271 ExpectedReturn
+E 13280 obj
+B 13288 Model Statistics    SOLVE CVaRModel Using LP From line 189
+B 13309 Solution Report     SOLVE CVaRModel Using LP From line 189
+F 13339 BudgetCon
+F 13340 ReturnCon
+F 13345 LossDefCon
+F 13600 VaRDevCon
+F 13857 CVaRDefCon
+F 13858 ObjectivFunc
+F 13859 CVaRLimCon
+F 13860 ReturnLimCon
+G 13867 x
+G 13886 VaRDev
+G 14141 losses
+G 14398 VaR
+G 14399 CVaR
+G 14400 ExpectedReturn
+G 14401 obj
+B 14414 Equation Listing    SOLVE CVaRModel Using LP From line 189
+D 14417 BudgetCon
+D 14422 ReturnCon
+D 14429 LossDefCon
+D 14446 VaRDevCon
+D 14457 CVaRDefCon
+D 14534 ObjectivFunc
+D 14539 CVaRLimCon
+D 14544 ReturnLimCon
+B 14550 Column Listing      SOLVE CVaRModel Using LP From line 189
+E 14553 x
+E 15322 VaRDev
+E 15341 losses
+E 15360 VaR
+E 15617 CVaR
+E 15625 ExpectedReturn
+E 15634 obj
+B 15642 Model Statistics    SOLVE CVaRModel Using LP From line 189
+B 15663 Solution Report     SOLVE CVaRModel Using LP From line 189
+F 15693 BudgetCon
+F 15694 ReturnCon
+F 15699 LossDefCon
+F 15954 VaRDevCon
+F 16211 CVaRDefCon
+F 16212 ObjectivFunc
+F 16213 CVaRLimCon
+F 16214 ReturnLimCon
+G 16221 x
+G 16240 VaRDev
+G 16495 losses
+G 16752 VaR
+G 16753 CVaR
+G 16754 ExpectedReturn
+G 16755 obj
+B 16768 Equation Listing    SOLVE CVaRModel Using LP From line 189
+D 16771 BudgetCon
+D 16776 ReturnCon
+D 16783 LossDefCon
+D 16800 VaRDevCon
+D 16811 CVaRDefCon
+D 16888 ObjectivFunc
+D 16893 CVaRLimCon
+D 16898 ReturnLimCon
+B 16904 Column Listing      SOLVE CVaRModel Using LP From line 189
+E 16907 x
+E 17676 VaRDev
+E 17695 losses
+E 17714 VaR
+E 17971 CVaR
+E 17979 ExpectedReturn
+E 17988 obj
+B 17996 Model Statistics    SOLVE CVaRModel Using LP From line 189
+B 18017 Solution Report     SOLVE CVaRModel Using LP From line 189
+F 18047 BudgetCon
+F 18048 ReturnCon
+F 18053 LossDefCon
+F 18308 VaRDevCon
+F 18565 CVaRDefCon
+F 18566 ObjectivFunc
+F 18567 CVaRLimCon
+F 18568 ReturnLimCon
+G 18575 x
+G 18594 VaRDev
+G 18849 losses
+G 19106 VaR
+G 19107 CVaR
+G 19108 ExpectedReturn
+G 19109 obj
+B 19122 Equation Listing    SOLVE CVaRModel Using LP From line 189
+D 19125 BudgetCon
+D 19130 ReturnCon
+D 19137 LossDefCon
+D 19154 VaRDevCon
+D 19165 CVaRDefCon
+D 19242 ObjectivFunc
+D 19247 CVaRLimCon
+D 19252 ReturnLimCon
+B 19258 Column Listing      SOLVE CVaRModel Using LP From line 189
+E 19261 x
+E 20030 VaRDev
+E 20049 losses
+E 20068 VaR
+E 20325 CVaR
+E 20333 ExpectedReturn
+E 20342 obj
+B 20350 Model Statistics    SOLVE CVaRModel Using LP From line 189
+B 20371 Solution Report     SOLVE CVaRModel Using LP From line 189
+F 20401 BudgetCon
+F 20402 ReturnCon
+F 20407 LossDefCon
+F 20662 VaRDevCon
+F 20919 CVaRDefCon
+F 20920 ObjectivFunc
+F 20921 CVaRLimCon
+F 20922 ReturnLimCon
+G 20929 x
+G 20948 VaRDev
+G 21203 losses
+G 21460 VaR
+G 21461 CVaR
+G 21462 ExpectedReturn
+G 21463 obj
+B 21476 Equation Listing    SOLVE CVaRModel Using LP From line 189
+D 21479 BudgetCon
+D 21484 ReturnCon
+D 21491 LossDefCon
+D 21508 VaRDevCon
+D 21519 CVaRDefCon
+D 21596 ObjectivFunc
+D 21601 CVaRLimCon
+D 21606 ReturnLimCon
+B 21612 Column Listing      SOLVE CVaRModel Using LP From line 189
+E 21615 x
+E 22384 VaRDev
+E 22403 losses
+E 22422 VaR
+E 22679 CVaR
+E 22687 ExpectedReturn
+E 22696 obj
+B 22704 Model Statistics    SOLVE CVaRModel Using LP From line 189
+B 22725 Solution Report     SOLVE CVaRModel Using LP From line 189
+F 22755 BudgetCon
+F 22756 ReturnCon
+F 22761 LossDefCon
+F 23016 VaRDevCon
+F 23273 CVaRDefCon
+F 23274 ObjectivFunc
+F 23275 CVaRLimCon
+F 23276 ReturnLimCon
+G 23283 x
+G 23302 VaRDev
+G 23557 losses
+G 23814 VaR
+G 23815 CVaR
+G 23816 ExpectedReturn
+G 23817 obj
+B 23830 Equation Listing    SOLVE CVaRModel Using LP From line 189
+D 23833 BudgetCon
+D 23838 ReturnCon
+D 23845 LossDefCon
+D 23862 VaRDevCon
+D 23873 CVaRDefCon
+D 23950 ObjectivFunc
+D 23955 CVaRLimCon
+D 23960 ReturnLimCon
+B 23966 Column Listing      SOLVE CVaRModel Using LP From line 189
+E 23969 x
+E 24738 VaRDev
+E 24757 losses
+E 24776 VaR
+E 25033 CVaR
+E 25041 ExpectedReturn
+E 25050 obj
+B 25058 Model Statistics    SOLVE CVaRModel Using LP From line 189
+B 25079 Solution Report     SOLVE CVaRModel Using LP From line 189
+F 25109 BudgetCon
+F 25110 ReturnCon
+F 25115 LossDefCon
+F 25370 VaRDevCon
+F 25627 CVaRDefCon
+F 25628 ObjectivFunc
+F 25629 CVaRLimCon
+F 25630 ReturnLimCon
+G 25637 x
+G 25656 VaRDev
+G 25911 losses
+G 26168 VaR
+G 26169 CVaR
+G 26170 ExpectedReturn
+G 26171 obj
+B 26184 Equation Listing    SOLVE CVaRModel Using LP From line 189
+D 26187 BudgetCon
+D 26192 ReturnCon
+D 26199 LossDefCon
+D 26216 VaRDevCon
+D 26227 CVaRDefCon
+D 26304 ObjectivFunc
+D 26309 CVaRLimCon
+D 26314 ReturnLimCon
+B 26320 Column Listing      SOLVE CVaRModel Using LP From line 189
+E 26323 x
+E 27092 VaRDev
+E 27111 losses
+E 27130 VaR
+E 27387 CVaR
+E 27395 ExpectedReturn
+E 27404 obj
+B 27412 Model Statistics    SOLVE CVaRModel Using LP From line 189
+B 27433 Solution Report     SOLVE CVaRModel Using LP From line 189
+F 27463 BudgetCon
+F 27464 ReturnCon
+F 27469 LossDefCon
+F 27724 VaRDevCon
+F 27981 CVaRDefCon
+F 27982 ObjectivFunc
+F 27983 CVaRLimCon
+F 27984 ReturnLimCon
+G 27991 x
+G 28010 VaRDev
+G 28265 losses
+G 28522 VaR
+G 28523 CVaR
+G 28524 ExpectedReturn
+G 28525 obj
+B 28538 E x e c u t i o n
+I 28538 RunningCVaR
+I 28544 RunningReturn
+I 28549 RunningAllocation
+I 28566 SummaryReport2
+I 28580 ExpRetLim
+B 28584 Equation Listing    SOLVE CVaRModel Using LP From line 219
+D 28587 BudgetCon
+D 28592 ReturnCon
+D 28601 LossDefCon
+D 28618 VaRDevCon
+D 28629 CVaRDefCon
+D 28706 ObjectivFunc
+D 28711 CVaRLimCon
+D 28716 ReturnLimCon
+B 28722 Column Listing      SOLVE CVaRModel Using LP From line 219
+E 28725 x
+E 29494 VaRDev
+E 29513 losses
+E 29532 VaR
+E 29789 CVaR
+E 29798 ExpectedReturn
+E 29806 obj
+B 29814 Model Statistics    SOLVE CVaRModel Using LP From line 219
+B 29830 Solution Report     SOLVE CVaRModel Using LP From line 219
+F 29860 BudgetCon
+F 29861 ReturnCon
+F 29866 LossDefCon
+F 30121 VaRDevCon
+F 30378 CVaRDefCon
+F 30379 ObjectivFunc
+F 30380 CVaRLimCon
+F 30381 ReturnLimCon
+G 30388 x
+G 30407 VaRDev
+G 30662 losses
+G 30919 VaR
+G 30920 CVaR
+G 30921 ExpectedReturn
+G 30922 obj
+B 30935 E x e c u t i o n
+I 30935 x
+I 30942 ExpectedReturn
+I 30943 CVaR
+B 30947 Equation Listing    SOLVE CVaRModel Using LP From line 229
+D 30950 BudgetCon
+D 30955 ReturnCon
+D 30962 LossDefCon
+D 30979 VaRDevCon
+D 30990 CVaRDefCon
+D 31065 ObjectivFunc
+D 31070 CVaRLimCon
+D 31075 ReturnLimCon
+B 31081 Column Listing      SOLVE CVaRModel Using LP From line 229
+E 31084 x
+E 31853 VaRDev
+E 31872 losses
+E 31891 VaR
+E 32148 CVaR
+E 32156 ExpectedReturn
+E 32165 obj
+B 32173 Model Statistics    SOLVE CVaRModel Using LP From line 229
+B 32189 Solution Report     SOLVE CVaRModel Using LP From line 229
+F 32219 BudgetCon
+F 32220 ReturnCon
+F 32225 LossDefCon
+F 32480 VaRDevCon
+F 32737 CVaRDefCon
+F 32738 ObjectivFunc
+F 32739 CVaRLimCon
+F 32740 ReturnLimCon
+G 32747 x
+G 32766 VaRDev
+G 33021 losses
+G 33278 VaR
+G 33279 CVaR
+G 33280 ExpectedReturn
+G 33281 obj
+B 33294 E x e c u t i o n
+I 33294 x
+I 33301 ExpectedReturn
+I 33302 CVaR

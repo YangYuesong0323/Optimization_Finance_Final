@@ -1,0 +1,25 @@
+--- Job Scenario_Generation.gms Start 11/21/19 22:31:16 28.2.0 r750fa45 DEX-DEG x86 64bit/Mac OS X
+--- GAMS Parameters defined
+    Input /Users/yuesongyang/Desktop/Finance/Project/Scenario_Generation.gms
+    PageSize 0
+    ScrDir /Users/yuesongyang/Desktop/Finance/Project/225c/
+    SysDir /Applications/GAMS28.2/sysdir/
+    LogOption 3
+    ErrMsg 1
+    ErrorLog 99
+    IDE 1
+    LstTitleLeftAligned 1
+GAMS 28.2.0   Copyright (C) 1987-2019 GAMS Development. All rights reserved
+Licensee: Course License Fall 2019                       G190805/0001AO-GEN
+          Technical University of Denmark, Management Engineering    DCE146
+          License for teaching and research at degree granting institutions
+          License Admin: Thomas Stidsen, thst@man.dtu.dk                   
+--- Starting compilation
+--- Scenario_Generation.gms(2) 2 Mb
+--- . WorldIndices.inc(455) 3 Mb
+--- Scenario_Generation.gms(31) 3 Mb
+--- Starting execution: elapsed 0:00:00.010
+--- Scenario_Generation.gms(486) 5 Mb
+--- GDX File /Users/yuesongyang/Desktop/Finance/Project/RetScen250.gdx
+*** Status: Normal completion
+--- Job Scenario_Generation.gms Stop 11/21/19 22:31:16 elapsed 0:00:00.139
