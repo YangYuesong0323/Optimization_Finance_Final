@@ -51,8 +51,9 @@ EP(i) = SUM(s, pr(s) * P(i,s));
 POSITIVE VARIABLES
          x(i)            'Holdings of assets in monetary units (not proportions)'
          VaRDev(s)       'Measures of the deviation from the VaR'
+         x_0(i)          'Holdings for the flat cost regime'
+         x_1(i)          'Holdings for the linear cost regime'
 ;
-
 VARIABLES
          losses(s)       'The scenario loss function'
          VaR             'The alpha Value-at-Risk'
@@ -61,7 +62,26 @@ VARIABLES
          obj             'objective function value'
 ;
 
+BINARY VARIABLE
+    Y(i)          'Indicator variable for assets included in the portfolio';
 
+PARAMETER
+    xlow(i)    'lower bound for active variables' ;
+
+// In case short sales are allowed these bounds must be set properly.
+xlow(i) = 0.0;
+x.up(i) = 1.0;
+
+SCALARS
+  NominalFlatCost 'fixed transaction cost'  /20/
+  OwnInvestment   'Investors own money'     /100000/
+;
+
+SCALARS
+  FlatCost 'Normalized fixed transaction cost' / 0.0002 /
+  PropCost 'Normalized proportional transaction cost' / 0.001 /;
+
+x_0.UP(i) = 0.2;
 
 EQUATIONS
          BudgetCon       'Equation defining the budget constraint'
@@ -72,9 +92,24 @@ EQUATIONS
          ObjectivFunc    'lambda formulation of the MeanCVaR model'
          CVaRLimCon      'Constraint limiting the CVaR'
          ReturnLimCon    'Constraint on a minimum expected return'
+         HoldingCon(i)   'Constraint defining the holdings'
+         FlatCostBounds(i)    'Upper bounds for flat transaction fee'
+         LinCostBounds(i)     'Upper bonds for linear transaction fee'
 ;
 
 
+
+EQUATIONS
+    ReturnDefWithCost    'Equation defining the portfolio return with cost'
+
+;
+
+
+ReturnDefWithCost..       PortReturn =e= SUM(i, ( ExpectedReturns(i)*x_0(i) - FlatCost*Y(i) ) ) +
+                          SUM(i, (ExpectedReturns(i) - PropCost)*x_1(i));
+
+
+MODEL MeanVarWithCost /ReturnDefWithCost, VarDef, HoldingCon, NormalCon, FlatCostBounds, LinCostBounds, ObjDef/;
 
 *--Objective------
 
@@ -95,11 +130,15 @@ CVaRLimCon ..            CVaR =L= CVaRLim;
 
 ReturnLimCon ..          ExpectedReturn =G= ExpRetLim;
 
+HoldingCon(i)..           x(i) =e= x_0(i) + x_1(i);
+
+FlatCostBounds(i)..       x_0(i) =l= x_0.up(i) * Y(i);
+
+LinCostBounds(i)..        x_1(i) =l= Y(i);
+
 
 
 *--Models-----------
-
-
 
 //Let's build an equal weight portfolio first,
 //by fixing the X values to be eqaully weighted:
@@ -132,83 +171,9 @@ MuTarget = ExpectedReturn.l;
 CVaRTarget = CVaR.L;
 display MuTarget, CVaRTarget;
 
-
-parameter PortValue(s);
-PortValue(s) = sum(i, P(i, s)*x.l(i) );
-
-parameter SummaryReport(*,*);
-SummaryReport(s,'PortValue') = PortValue(s);
-
-BestCase = Smax(s, PortValue(s));
-WorstCase = Smin(s, PortValue(s));
-display BestCase, WorstCase;
-
-
-
-*EXECUTE_UNLOAD 'SummaryReport.gdx', SummaryReport;
-*EXECUTE 'gdxxrw.exe SummaryReport.gdx O=PortValue.xls par=SummaryReport rng=sheet1!a1' ;
-
 //The next two lines are used to free the X variable again
 X.lo(i) = 0;
 X.up(i) = Budget*10;
-
-
-*------------------Eff Front with equidistant CVaR--------------------*
-set pp /pp0*pp10/;
-
-PARAMETERS
-         RunningCVaR(pp)          'Optimal level of portfolio CVaR'
-         RunningReturn(pp)        'Portfolio return'
-         RunningAllocation(pp,i)  'Optimal asset allocation'
-         MaxCVar
-         MinCVar
-;
-
-*first we find the biggest possible average, hence maximum CVaR:
-lambda = 0;
-SOLVE CVaRModel Maximizing OBJ Using LP;
-MaxCVar = CVaR.l;
-RunningCVaR(pp)$(ord(pp)=1) = CVaR.l;
-RunningReturn(pp)$(ord(pp)=1)  = ExpectedReturn.l;
-RunningAllocation(pp,i)$(ord(pp)=1)     = x.l(i);
-
-*Then we find the lowest possible variance:
-lambda = 1;
-SOLVE CVaRModel Maximizing OBJ Using LP;
-MinCVar = CVaR.l;
-RunningCVaR(pp)$(ord(pp)=card(pp)) = CVaR.l;
-RunningReturn(pp)$(ord(pp)=card(pp))  = ExpectedReturn.l;
-RunningAllocation(pp,i)$(ord(pp)=card(pp))     = x.l(i);
-
-display MaxCVar, MinCVar;
-
-*Then we find the equidistant variances in between
-lambda = 0;
-CVarLim = MaxCVar;
-loop(pp$(ord(pp)>1 and ord(pp)<card(pp)),
-CVarLim = CVarLim - (MaxCVar-MinCVar)/(card(pp)-1);
-SOLVE CVaRModel Maximizing OBJ Using LP;
-*display VarLim, PortVariance.l;
-RunningCVaR(pp) = CVaR.l;
-RunningReturn(pp)  = ExpectedReturn.l;
-RunningAllocation(pp,i)     = x.l(i);
-);
-
-display RunningCVaR, RunningReturn, RunningAllocation;
-
-
-parameter SummaryReport2(*,*);
-* Store results by rows
-SummaryReport2(i,pp) = RunningAllocation(pp,i);
-SummaryReport2('CVaR',pp) = RunningCVaR(pp);
-SummaryReport2('Return',pp) = RunningReturn(pp);
-
-
-DISPLAY SummaryReport2;
-* Write SummaryReport into an Excel file
-
-EXECUTE_UNLOAD 'Summary2.gdx', SummaryReport2;
-//EXECUTE 'gdxxrw.exe Summary2.gdx O=MeanCVaRFrontier.xls par=SummaryReport2 rng=sheet1!a1' ;
 
 
 //Let's minimize CVaR with the target return from the equal weight portfolio
@@ -223,7 +188,6 @@ display X.l, ExpectedReturn.l, CVaR.l;
 
 //Let's maximize expected return with the target CVaR from the equal weight portfolio
 CVaRLim = CVaRtarget;
-
 
 Lambda = 0;
 ExpRetLim = -100;

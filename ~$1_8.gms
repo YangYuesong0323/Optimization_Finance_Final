@@ -165,7 +165,7 @@ PARAMETERS
 ;
 
 *first we find the biggest possible average, hence maximum CVaR:
-lambda = 0;
+lambda = 0.001;
 SOLVE CVaRModel Maximizing OBJ Using LP;
 MaxCVar = CVaR.l;
 RunningCVaR(pp)$(ord(pp)=1) = CVaR.l;
@@ -173,7 +173,7 @@ RunningReturn(pp)$(ord(pp)=1)  = ExpectedReturn.l;
 RunningAllocation(pp,i)$(ord(pp)=1)     = x.l(i);
 
 *Then we find the lowest possible variance:
-lambda = 1;
+lambda = 0.999;
 SOLVE CVaRModel Maximizing OBJ Using LP;
 MinCVar = CVaR.l;
 RunningCVaR(pp)$(ord(pp)=card(pp)) = CVaR.l;
