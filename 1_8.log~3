@@ -1,4 +1,4 @@
---- Job 1_8.gms Start 11/28/19 04:38:14 28.2.0 r750fa45 DEX-DEG x86 64bit/Mac OS X
+--- Job 1_8.gms Start 11/28/19 04:35:56 28.2.0 r750fa45 DEX-DEG x86 64bit/Mac OS X
 --- GAMS Parameters defined
     Input /Users/yuesongyang/Desktop/Finance/Project/1_8.gms
     PageSize 0
@@ -18,8 +18,8 @@ Licensee: Course License Fall 2019                       G190805/0001AO-GEN
 --- 1_8.gms(17) 2 Mb
 --- GDXin=/Users/yuesongyang/Desktop/Finance/Project/FixedScenarios.gdx
 --- 1_8.gms(18) 3 Mb 2 Errors
-*** Error 492 in /Users/yuesongyang/Desktop/Finance/Project/1_8.gms
-    Symbol not in GDX
+*** Error 140 in /Users/yuesongyang/Desktop/Finance/Project/1_8.gms
+    Unknown symbol
 *** Error 361 in /Users/yuesongyang/Desktop/Finance/Project/1_8.gms
     Values for domain 1 are unknown - no checking possible
 --- 1_8.gms(45) 3 Mb 4 Errors
@@ -65,4 +65,4 @@ Licensee: Course License Fall 2019                       G190805/0001AO-GEN
        text of a declaration. Check symbol reference list.
 --- 1_8.gms(121) 3 Mb 12 Errors
 *** Status: Compilation error(s)
---- Job 1_8.gms Stop 11/28/19 04:38:14 elapsed 0:00:00.016
+--- Job 1_8.gms Stop 11/28/19 04:35:56 elapsed 0:00:00.017

@@ -5,9 +5,9 @@ option optcr=0, reslim=120;
 
 SET
          scen
-         Assets
+         Asset
 ;
-ALIAS(Assets,i);
+ALIAS(Asset,i);
 ALIAS(scen, s);
 
 PARAMETER
@@ -15,7 +15,7 @@ PARAMETER
 ;
 
 $GDXIN FixedScenarios
-$LOAD Assets, scen, RetScen
+$LOAD Asset, scen, RetScen
 $GDXIN
 
 
@@ -118,7 +118,7 @@ SOLVE CVaRModel Maximizing OBJ Using LP;
 
 
 DISPLAY X.l, ExpectedReturn.l, VaR.L, CVaR.L;
-
+$exit
 
 Parameters
     MuTarget,

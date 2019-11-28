@@ -1,0 +1,28 @@
+--- Job Scenario_Generation_p.gms Start 11/28/19 03:34:35 28.2.0 r750fa45 DEX-DEG x86 64bit/Mac OS X
+--- GAMS Parameters defined
+    Input /Users/yuesongyang/Desktop/Finance/Project/Scenario_Generation_p.gms
+    PageSize 0
+    ScrDir /Users/yuesongyang/Desktop/Finance/Project/225c/
+    SysDir /Applications/GAMS28.2/sysdir/
+    LogOption 3
+    ErrMsg 1
+    ErrorLog 99
+    IDE 1
+    LstTitleLeftAligned 1
+GAMS 28.2.0   Copyright (C) 1987-2019 GAMS Development. All rights reserved
+Licensee: Course License Fall 2019                       G190805/0001AO-GEN
+          Technical University of Denmark, Management Engineering    DCE146
+          License for teaching and research at degree granting institutions
+          License Admin: Thomas Stidsen, thst@man.dtu.dk                   
+--- Starting compilation
+--- Scenario_Generation_p.gms(15) 2 Mb
+--- GDXin=/Users/yuesongyang/Desktop/Finance/Project/Data.gdx
+--- Scenario_Generation_p.gms(75) 10 Mb 1 Error
+*** Error 140 in /Users/yuesongyang/Desktop/Finance/Project/Scenario_Generation_p.gms
+    Unknown symbol
+--- Scenario_Generation_p.gms(76) 10 Mb 2 Errors
+*** Error 140 in /Users/yuesongyang/Desktop/Finance/Project/Scenario_Generation_p.gms
+    Unknown symbol
+--- Scenario_Generation_p.gms(133) 10 Mb 2 Errors
+*** Status: Compilation error(s)
+--- Job Scenario_Generation_p.gms Stop 11/28/19 03:34:35 elapsed 0:00:00.027

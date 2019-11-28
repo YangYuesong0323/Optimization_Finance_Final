@@ -1,4 +1,4 @@
---- Job Scenario_Generation_rolling.gms Start 11/21/19 22:42:33 28.2.0 r750fa45 DEX-DEG x86 64bit/Mac OS X
+--- Job Scenario_Generation_rolling.gms Start 11/28/19 03:57:39 28.2.0 r750fa45 DEX-DEG x86 64bit/Mac OS X
 --- GAMS Parameters defined
     Input /Users/yuesongyang/Desktop/Finance/Project/Scenario_Generation_rolling.gms
     PageSize 0
@@ -17,42 +17,42 @@ Licensee: Course License Fall 2019                       G190805/0001AO-GEN
 --- Starting compilation
 --- Scenario_Generation_rolling.gms(15) 2 Mb
 --- GDXin=/Users/yuesongyang/Desktop/Finance/Project/Data.gdx
---- Scenario_Generation_rolling.gms(47) 10 Mb
---- Starting execution: elapsed 0:00:00.029
---- Scenario_Generation_rolling.gms(35) 10 Mb
---- Scenario_Generation_rolling.gms(35) 11 Mb
---- Scenario_Generation_rolling.gms(35) 11 Mb
---- Scenario_Generation_rolling.gms(35) 12 Mb
---- Scenario_Generation_rolling.gms(35) 13 Mb
---- Scenario_Generation_rolling.gms(35) 13 Mb  3 secs
---- Scenario_Generation_rolling.gms(35) 14 Mb  3 secs
---- Scenario_Generation_rolling.gms(35) 14 Mb  4 secs
---- Scenario_Generation_rolling.gms(35) 14 Mb  4 secs
---- Scenario_Generation_rolling.gms(35) 15 Mb  5 secs
---- Scenario_Generation_rolling.gms(35) 15 Mb  5 secs
---- Scenario_Generation_rolling.gms(35) 15 Mb  6 secs
---- Scenario_Generation_rolling.gms(35) 16 Mb  6 secs
---- Scenario_Generation_rolling.gms(35) 16 Mb  6 secs
---- Scenario_Generation_rolling.gms(35) 16 Mb  7 secs
---- Scenario_Generation_rolling.gms(35) 17 Mb  7 secs
---- Scenario_Generation_rolling.gms(35) 17 Mb  8 secs
---- Scenario_Generation_rolling.gms(35) 17 Mb  8 secs
---- Scenario_Generation_rolling.gms(35) 18 Mb  9 secs
---- Scenario_Generation_rolling.gms(35) 18 Mb  9 secs
---- Scenario_Generation_rolling.gms(35) 18 Mb  10 secs
---- Scenario_Generation_rolling.gms(35) 19 Mb  10 secs
---- Scenario_Generation_rolling.gms(35) 19 Mb  11 secs
---- Scenario_Generation_rolling.gms(35) 19 Mb  12 secs
---- Scenario_Generation_rolling.gms(35) 19 Mb  13 secs
---- Scenario_Generation_rolling.gms(35) 19 Mb  14 secs
---- Scenario_Generation_rolling.gms(35) 19 Mb  15 secs
---- Scenario_Generation_rolling.gms(35) 19 Mb  16 secs
---- Scenario_Generation_rolling.gms(35) 19 Mb  17 secs
---- Scenario_Generation_rolling.gms(35) 20 Mb  17 secs
---- Scenario_Generation_rolling.gms(35) 20 Mb  18 secs
---- Scenario_Generation_rolling.gms(35) 20 Mb  19 secs
---- Scenario_Generation_rolling.gms(46) 20 Mb
+--- Scenario_Generation_rolling.gms(48) 10 Mb
+--- Starting execution: elapsed 0:00:00.039
+--- Scenario_Generation_rolling.gms(36) 10 Mb
+--- Scenario_Generation_rolling.gms(36) 11 Mb
+--- Scenario_Generation_rolling.gms(36) 11 Mb
+--- Scenario_Generation_rolling.gms(36) 12 Mb
+--- Scenario_Generation_rolling.gms(36) 13 Mb
+--- Scenario_Generation_rolling.gms(36) 13 Mb  3 secs
+--- Scenario_Generation_rolling.gms(36) 14 Mb  3 secs
+--- Scenario_Generation_rolling.gms(36) 14 Mb  4 secs
+--- Scenario_Generation_rolling.gms(36) 14 Mb  4 secs
+--- Scenario_Generation_rolling.gms(36) 15 Mb  5 secs
+--- Scenario_Generation_rolling.gms(36) 15 Mb  5 secs
+--- Scenario_Generation_rolling.gms(36) 15 Mb  6 secs
+--- Scenario_Generation_rolling.gms(36) 16 Mb  6 secs
+--- Scenario_Generation_rolling.gms(36) 16 Mb  7 secs
+--- Scenario_Generation_rolling.gms(36) 17 Mb  7 secs
+--- Scenario_Generation_rolling.gms(36) 17 Mb  8 secs
+--- Scenario_Generation_rolling.gms(36) 17 Mb  8 secs
+--- Scenario_Generation_rolling.gms(36) 18 Mb  9 secs
+--- Scenario_Generation_rolling.gms(36) 18 Mb  9 secs
+--- Scenario_Generation_rolling.gms(36) 18 Mb  10 secs
+--- Scenario_Generation_rolling.gms(36) 19 Mb  10 secs
+--- Scenario_Generation_rolling.gms(36) 19 Mb  11 secs
+--- Scenario_Generation_rolling.gms(36) 19 Mb  12 secs
+--- Scenario_Generation_rolling.gms(36) 19 Mb  13 secs
+--- Scenario_Generation_rolling.gms(36) 19 Mb  14 secs
+--- Scenario_Generation_rolling.gms(36) 19 Mb  15 secs
+--- Scenario_Generation_rolling.gms(36) 19 Mb  16 secs
+--- Scenario_Generation_rolling.gms(36) 19 Mb  17 secs
+--- Scenario_Generation_rolling.gms(36) 20 Mb  17 secs
+--- Scenario_Generation_rolling.gms(36) 20 Mb  18 secs
+--- Scenario_Generation_rolling.gms(36) 20 Mb  19 secs
 --- Scenario_Generation_rolling.gms(47) 20 Mb
+--- Scenario_Generation_rolling.gms(48) 20 Mb
+
 --- GDX File /Users/yuesongyang/Desktop/Finance/Project/RollingScenarios.gdx
 *** Status: Normal completion
---- Job Scenario_Generation_rolling.gms Stop 11/21/19 22:42:53 elapsed 0:00:20.237
+--- Job Scenario_Generation_rolling.gms Stop 11/28/19 03:57:59 elapsed 0:00:20.123

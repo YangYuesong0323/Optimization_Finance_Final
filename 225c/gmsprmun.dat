@@ -1,0 +1,10 @@
+Input=/Users/yuesongyang/Desktop/Finance/Project/Scenario_Generation_rolling.gms
+PageSize=0
+ScrDir=225c
+SysDir=/Applications/GAMS28.2/sysdir
+ScriptNext=225c/gamsnext.sh
+LogOption=3
+ErrMsg=1
+ErrorLog=99
+IDE=1
+LstTitleLeftAligned=1

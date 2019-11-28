@@ -16,29 +16,66 @@ $GDXIN Data
 $LOAD Asset Date IndexReturns
 $GDXIN
 
-*display Asset
-*
-*Parameter
-*    foodreturn(t);
-*    
-*foodreturn(t)=IndexReturns('food',t);
-*
-*FILE foodreturnHandle /"food.csv"/;
-*
-*foodreturnHandle.pc = 5;
-*foodreturnHandle.pw = 1048;
-*
-*PUT foodreturnHandle;
-*
-** Write the heading
-*
-*PUT "return";
-*
-*PUT /;
-*
-*LOOP (t, PUT foodreturn(t), PUT /);
-*
-*PUTCLOSE;
+Parameter
+    foodreturn(t)
+    globalreturn(t)
+    japanreturn(t);
+    
+foodreturn(t)=IndexReturns('food',t);
+globalreturn(t)=IndexReturns('GlobalME2_BO1',t);
+japanreturn(t)=IndexReturns('JapanME1_BO3',t);
+
+FILE foodreturnHandle /"food.csv"/;
+
+foodreturnHandle.pc = 5;
+foodreturnHandle.pw = 1048;
+
+PUT foodreturnHandle;
+
+* Write the heading
+
+PUT "return";
+
+PUT /;
+
+LOOP (t, PUT foodreturn(t), PUT /);
+
+PUTCLOSE;
+
+FILE globalreturnHandle /"GlobalME2_BO1.csv"/;
+
+globalreturnHandle.pc = 5;
+globalreturnHandle.pw = 1048;
+
+PUT globalreturnHandle;
+
+* Write the heading
+
+PUT "return";
+
+PUT /;
+
+LOOP (t, PUT globalreturn(t), PUT /);
+
+PUTCLOSE;
+
+
+FILE japanreturnHandle /"JapanME1_BO3.csv"/;
+
+japanreturnHandle.pc = 5;
+japanreturnHandle.pw = 1048;
+
+PUT japanreturnHandle;
+
+* Write the heading
+
+PUT "return";
+
+PUT /;
+
+LOOP (t, PUT japanreturn(t), PUT /);
+
+PUTCLOSE;
 
 
 set
@@ -64,16 +101,14 @@ loop(scen,
 
 );
 
-
 Parameter
-
 foodScen(scen)
 globalScen(scen)
 japanScen(scen);
 
 foodScen(scen)=RetScen('food', scen);
-globalScen(scen)=RetScen('GlobalME2_BO1',scen);
-japanScen(scen)=RetScen('JapanME1_BO3',scen);
+globalScen(scen)=RetScen('GlobalME2_BO1', scen);
+japanScen(scen)=RetScen('JapanME1_BO3', scen);
 
 FILE foodScenhandle /"foodscen.csv"/;
 
@@ -90,8 +125,8 @@ PUT /;
 
 LOOP (scen, PUT foodScen(scen), PUT /);
 
-
 PUTCLOSE;
+
 
 FILE globalScenhandle /"globalscen.csv"/;
 
@@ -100,16 +135,14 @@ globalScenhandle.pw = 1048;
 
 PUT globalScenhandle;
 
-* Write the heading
-
 PUT "return";
 
 PUT /;
 
 LOOP (scen, PUT globalScen(scen), PUT /);
 
-
 PUTCLOSE;
+
 
 FILE japanScenhandle /"japanscen.csv"/;
 
@@ -126,8 +159,7 @@ PUT /;
 
 LOOP (scen, PUT japanScen(scen), PUT /);
 
-
 PUTCLOSE;
 
 display RetScen;
-// EXECUTE_UNLOAD 'FixedScenarios.gdx', scen, Assets, RetScen;
+EXECUTE_UNLOAD 'FixedScenarios.gdx', scen, Asset, RetScen;
